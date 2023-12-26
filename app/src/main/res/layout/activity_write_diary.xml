@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#e8eff0"
+    android:layout_height="match_parent"
+    tools:context=".SearchKcalDetailActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button_style_1"
+        android:backgroundTint="#d0e0fd"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="저장"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="111dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button_style_1"
+        android:backgroundTint="#d0e0fd"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="취소"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_food"
+        android:layout_width="255dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="53dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="84dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="날짜 :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="걸음 수 : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="소모 칼로리 :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="104dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="음식 이름 :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="104dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="음식 kcal :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="339dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <TextView
+        android:id="@+id/tvStepCount"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <TextView
+        android:id="@+id/tvKcal"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/tvFood"
+        android:layout_width="227dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <TextView
+        android:id="@+id/tvFoodKcal"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

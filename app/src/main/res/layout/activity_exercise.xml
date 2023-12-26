@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8eff0"
+    tools:context=".ExerciseActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="405dp"
+        android:layout_height="290dp"
+        app:cameraTargetLat="37.606537"
+        app:cameraTargetLng="127.041758"
+        app:cameraZoom="13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138"
+        app:mapType="normal"
+        app:uiZoomControls="true" />
+
+    <ToggleButton
+        android:id="@+id/workOutToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:textOff="운동 하기"
+        android:textOn="운동 그만"
+        app:layout_constraintBottom_toTopOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="165dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="소모 kcal : "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="165dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="걸음 수 : "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/tvKcal"
+        android:layout_width="148dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <TextView
+        android:id="@+id/tvStepCount"
+        android:layout_width="199dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/tv7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecommendFood"
+        android:layout_width="410dp"
+        android:layout_height="209dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

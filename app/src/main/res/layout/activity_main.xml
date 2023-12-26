@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8eff0"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="416dp"
+        android:layout_height="204dp"
+        android:background="#6bb1ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="76dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_style_1"
+            android:backgroundTint="#d0e0fd"
+            android:fontFamily="@font/gmarket_sans_ttf_bold"
+            android:text="저장"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="198dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="48dp"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:fontFamily="@font/gmarket_sans_ttf_bold"
+            android:hint="0kg"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="145dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/gmarket_sans_ttf_bold"
+            android:text="내 몸무게 : "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKcalSearch"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/button_style_1"
+        android:backgroundTint="#d0e0fd"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="kcal 검색"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExercise" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExercise"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="316dp"
+        android:background="@drawable/button_style_1"
+        android:backgroundTint="#d0e0fd"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="운동하기"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDiary"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="44dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_style_1"
+        android:backgroundTint="#d0e0fd"
+        android:fontFamily="@font/gmarket_sans_ttf_bold"
+        android:text="일기 목록"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKcalSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
