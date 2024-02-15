@@ -57,7 +57,7 @@
   
   > 엑셀파일에서 읽어온 음식 영양 정보를 다음과 같이 가져와서 adapter에 담아준다
   > 음식 이름에 해당하는 이미지는 네이버 API에서 획득
-  ```
+ ```
 interface FoodImgAPIService {
     @GET("v1/search/image")
     fun getBooksByKeyword (
@@ -100,4 +100,3 @@ fun readExcelByKcal(kcal: String): List<FoodItem> {
         return foodItemList
     }
   ```
-  ---
